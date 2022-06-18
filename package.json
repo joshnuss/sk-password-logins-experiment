@@ -1,0 +1,25 @@
+{
+	"name": "sk-password-logins",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"prepare": "svelte-kit sync"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"bcrypt": "^5.0.1",
+		"date-fns": "^2.28.0",
+		"joi": "^17.6.0",
+		"nanoid": "^4.0.0",
+		"svelte": "^3.44.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@prisma/client": "^3.15.2",
+		"prisma": "^3.15.2"
+	}
+}

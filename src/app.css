@@ -1,0 +1,89 @@
+:root {
+  --dark-purple: #8f0fee;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #221e30;
+  font-family: sans-serif;
+  color: #333;
+}
+body > div {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2 {
+  font-family: Inter;
+}
+
+h1 {
+  margin: 0.7rem 0 2rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #222d;
+  letter-spacing: -0.8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  padding: 0.7rem;
+  border: solid 1px #1113;
+  border-radius: 5px;
+  background: transparent;
+}
+
+input:not(:placeholder-shown):invalid {
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+form label span {
+  color: #555;
+  font-size: 0.9rem;
+  padding: 2px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+}
+
+form button {
+  background: var(--dark-purple);
+  color: white;
+  border: solid 1px #ccc3;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+form button:hover {
+  background: #bc87e3;
+  color: #444;
+}
+
+.error {
+  color: #bd0320;
+}
